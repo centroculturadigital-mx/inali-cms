@@ -21,7 +21,7 @@ import { ApolloLink } from 'apollo-link'
 
 import { createBrowserHistory } from 'history';
 
-const http = new HttpLink({ uri:  'http://localhost:3000/graphql' })
+const http = new HttpLink({ uri:  'http://localhost:3000/graphql/' })
 
 
 const client = new ApolloClient({
@@ -31,7 +31,8 @@ const client = new ApolloClient({
         http
     ]),
     // uri: process.env.API_URl,
-    cache: new InMemoryCache()
+    cache: new InMemoryCache(),
+    onError: err => {console.log(err)}
 });
 
 

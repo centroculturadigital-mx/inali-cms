@@ -6,7 +6,7 @@ const UsuarioResumenVista = ({
     id,
     nombreUsuario
 }) => (
-    <article class="UsuarioResumen">
+    <article className="UsuarioResumen">
         <a href="#">
             <h4>
                 { nombreUsuario }

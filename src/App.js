@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Query } from 'react-apollo';
 import UsuariosLista from './componentes/Usuario/UsuariosLista/UsuariosLista';
+import UsuarioEditar from './componentes/Usuario/UsuarioEditar/UsuarioEditar';
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <div className="App">
 
       <UsuariosLista />
+      <UsuarioEditar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
